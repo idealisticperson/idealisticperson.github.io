@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flexbox</title>
+</head>
+
+<style>
+    .container {
+        background-color: blue;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        margin: 10px;
+        justify-content: space-between;
+    }
+
+    .container-item {
+        background-color: white;
+        margin: 10px;
+        width: 10%;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        color: blue;
+        font-family: sans-serif;
+        background-color: antiquewhite;
+    }
+
+</style>
+
+<body>
+
+    <div class=container>
+        <div class="container-item" style="order: 1;
+flex-grow: 5;
+flex-shrink: 0;
+flex-basis: 100px;
+">A</div>
+        <div class="container-item" style="order: 3;
+flex-grow: 0;
+flex-shrink: 3;
+flex-basis: 100px;
+">B</div>
+        
+        <div class="container-item" style="order: 6;
+flex-grow: 0;
+flex-shrink: 0;
+flex-basis: 100px;
+">E</div>
+        <div class="container-item" style="order: 5;
+flex-grow: 0;
+flex-shrink: 0;
+flex-basis: 100px;
+">F</div>
+        <div class="container-item" style="order: 4;
+flex-grow: 10;
+flex-shrink: 0;
+flex-basis: 100px;
+">G</div>
+        <div class="container-item" style="order: 2;
+flex-grow: 2;
+flex-shrink: 0;
+flex-basis: 100px;
+">H</div>
+
+    </div>
+
+
+</body>
+
+</html>
